@@ -1,0 +1,29 @@
+{
+ "XMLName": {
+  "Space": "",
+  "Local": "assemblies"
+ },
+ "Text": "\n    \n",
+ "Assembly": {
+  "Text": "\n        \n    ",
+  "TestFramework": "junit",
+  "Collection": {
+   "Text": "\n            \n        ",
+   "Test": {
+    "Text": "\n                \n                \n            ",
+    "Name": "org.example.FailedTest",
+    "Type": "Some failed test",
+    "Method": "failedTest",
+    "Time": "0.1542482",
+    "Result": "Fail",
+    "Output": "test output\\n",
+    "Failure": {
+     "Text": "\n                    \n                    \n                ",
+     "ExceptionType": "Xunit.Sdk.TrueException",
+     "Message": "Assert.True() Failure\\r\\nExpected: True\\r\\nActual:   False",
+     "StackTrace": "FAILED-TRACE"
+    }
+   }
+  }
+ }
+}

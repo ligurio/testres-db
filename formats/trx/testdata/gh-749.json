@@ -1,0 +1,84 @@
+{
+ "XMLName": {
+  "Space": "http://microsoft.com/schemas/VisualStudio/TeamTest/2010",
+  "Local": "TestRun"
+ },
+ "Text": "\n    \n    \n    \n    \n    \n    \n    \n",
+ "ID": "d32752e7-f92d-4636-8aa4-3c5c13c81fd7",
+ "Name": "@computerName 2018-10-08 15:34:14",
+ "RunUser": "",
+ "Xmlns": "http://microsoft.com/schemas/VisualStudio/TeamTest/2010",
+ "Times": {
+  "Text": "",
+  "Creation": "2018-10-08T15:34:14.0933035+02:00",
+  "Queuing": "2018-10-08T15:34:14.0933035+02:00",
+  "Start": "2018-10-08T15:34:12.5177742+02:00",
+  "Finish": "2018-10-08T15:34:17.5631430+02:00"
+ },
+ "Results": {
+  "Text": "\n        \n    ",
+  "UnitTestResult": [
+   {
+    "Text": "",
+    "ExecutionId": "3f66826e-4985-4f0c-8487-fb22efe22dd6",
+    "TestId": "baee4da8-a695-8106-f452-fc8078d9cc22",
+    "TestName": "testMethod",
+    "ComputerName": "computerName",
+    "Duration": "00:00:00.1054123",
+    "StartTime": "2018-10-08T15:34:12.7049658+02:00",
+    "EndTime": "2018-10-08T15:34:12.8453595+02:00",
+    "TestType": "13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b",
+    "Outcome": "Passed",
+    "TestListId": "8c84fa94-04c1-424b-9868-57a2d4851a1d",
+    "RelativeResultsDirectory": "3f66826e-4985-4f0c-8487-fb22efe22dd6",
+    "Output": {
+     "Text": "",
+     "ErrorInfo": {
+      "Text": "",
+      "Message": ""
+     }
+    }
+   }
+  ]
+ },
+ "TestDefinitions": {
+  "Text": "\n        \n    ",
+  "UnitTest": [
+   {
+    "Text": "\n            \n            \n        ",
+    "Name": "testMethod",
+    "Storage": "C:\\tmp\\bin\\debug\\test.dll",
+    "ID": "baee4da8-a695-8106-f452-fc8078d9cc22",
+    "Execution": {
+     "Text": "",
+     "ID": "3f66826e-4985-4f0c-8487-fb22efe22dd6"
+    },
+    "TestMethod": {
+     "Text": "",
+     "CodeBase": "C:\\tmp\\bin\\Debug\\Test.dll",
+     "ClassName": "TestClass",
+     "Name": "testMethod"
+    }
+   }
+  ]
+ },
+ "TestEntries": {
+  "Text": "\n        \n    ",
+  "TestEntry": [
+   {
+    "Text": "",
+    "TestId": "baee4da8-a695-8106-f452-fc8078d9cc22",
+    "ExecutionId": "3f66826e-4985-4f0c-8487-fb22efe22dd6",
+    "TestListId": "8c84fa94-04c1-424b-9868-57a2d4851a1d"
+   }
+  ]
+ },
+ "TestLists": {
+  "Text": "\n        \n        \n    ",
+  "TestList": {
+   "Text": "",
+   "Name": "Alle geladenen Ergebnisse",
+   "ID": "19431567-8539-422a-85d7-44ee4e166bda"
+  }
+ }
+}

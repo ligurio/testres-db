@@ -1,0 +1,84 @@
+{
+ "XMLName": {
+  "Space": "http://microsoft.com/schemas/VisualStudio/TeamTest/2010",
+  "Local": "TestRun"
+ },
+ "Text": "\n    \n    \n    \n    \n    \n    \n",
+ "ID": "37bd1bbc-784e-477a-8fe2-a116517ba93f",
+ "Name": "@ip-10-0-12-95 2017-09-11 07:32:55",
+ "RunUser": "",
+ "Xmlns": "http://microsoft.com/schemas/VisualStudio/TeamTest/2010",
+ "Times": {
+  "Text": "",
+  "Creation": "2017-09-11T07:32:55.5710479+00:00",
+  "Queuing": "2017-09-11T07:32:55.5710493+00:00",
+  "Start": "2017-09-11T07:31:47.7161493+00:00",
+  "Finish": "2017-09-11T07:50:48.6048416+00:00"
+ },
+ "Results": {
+  "Text": "\n        \n    ",
+  "UnitTestResult": [
+   {
+    "Text": "\n            \n        ",
+    "ExecutionId": "a0c122ad-b99a-4e42-b42c-9f03a42e789d",
+    "TestId": "6efcec51-ecd8-464a-afdf-a8f254074a1a",
+    "TestName": "MyCompany.TestSuite.IntegrationTests.Retrieve.RetrieveTestCases.Test_BookingIdInResponse_Succeeds",
+    "ComputerName": "ip-10-0-12-95",
+    "Duration": "00:00:00.0010000",
+    "StartTime": "2017-09-11T07:32:55.4659624+00:00",
+    "EndTime": "2017-09-11T07:32:55.4659679+00:00",
+    "TestType": "13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b",
+    "Outcome": "Failed",
+    "TestListId": "8c84fa94-04c1-424b-9868-57a2d4851a1d",
+    "RelativeResultsDirectory": "a0c122ad-b99a-4e42-b42c-9f03a42e789d",
+    "Output": {
+     "Text": "\n                \n            ",
+     "ErrorInfo": {
+      "Text": "\n                    \n                    \n                ",
+      "Message": "Some message"
+     }
+    }
+   }
+  ]
+ },
+ "TestDefinitions": {
+  "Text": "\n        \n    ",
+  "UnitTest": [
+   {
+    "Text": "\n            \n            \n        ",
+    "Name": "MyCompany.TestSuite.IntegrationTests.Retrieve.RetrieveTestCases.Test_BookingIdInResponse_Succeeds",
+    "Storage": "/var/lib/jenkins/workspace/Product/code/test/MyCompany.testsuite/bin/release/netcoreapp2.0/MyCompany.testsuite.dll",
+    "ID": "6efcec51-ecd8-464a-afdf-a8f254074a1a",
+    "Execution": {
+     "Text": "",
+     "ID": "a0c122ad-b99a-4e42-b42c-9f03a42e789d"
+    },
+    "TestMethod": {
+     "Text": "",
+     "CodeBase": "/var/lib/jenkins/workspace/Product/code/test/MyCompany.TestSuite/bin/Release/netcoreapp2.0/MyCompany.TestSuite.dll",
+     "ClassName": "MyCompany.TestSuite.IntegrationTests.Retrieve.RetrieveTestCases",
+     "Name": "MyCompany.TestSuite.IntegrationTests.Retrieve.RetrieveTestCases.Test_BookingIdInResponse_Succeeds"
+    }
+   }
+  ]
+ },
+ "TestEntries": {
+  "Text": "\n        \n    ",
+  "TestEntry": [
+   {
+    "Text": "",
+    "TestId": "6efcec51-ecd8-464a-afdf-a8f254074a1a",
+    "ExecutionId": "a0c122ad-b99a-4e42-b42c-9f03a42e789d",
+    "TestListId": "8c84fa94-04c1-424b-9868-57a2d4851a1d"
+   }
+  ]
+ },
+ "TestLists": {
+  "Text": "\n        \n        \n    ",
+  "TestList": {
+   "Text": "",
+   "Name": "All Loaded Results",
+   "ID": "19431567-8539-422a-85d7-44ee4e166bda"
+  }
+ }
+}

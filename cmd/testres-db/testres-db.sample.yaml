@@ -1,0 +1,18 @@
+projects:
+- name: criu
+  backends:
+   - type: jenkins
+     branch: master
+     pipeline: ""
+     base: https://ci.openvz.org/
+     username: anonymous
+     secret: anonymous
+
+- name: solr
+  backends:
+   - type: jenkins
+     branch: master
+     pipeline: ""
+     base: https://builds.apache.org/
+     username: anonymous
+     secret: anonymous

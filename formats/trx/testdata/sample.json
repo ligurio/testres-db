@@ -1,0 +1,213 @@
+{
+ "XMLName": {
+  "Space": "http://microsoft.com/schemas/VisualStudio/TeamTest/2010",
+  "Local": "TestRun"
+ },
+ "Text": "\n    \n    \n    \n    \n    \n    \n    \n",
+ "ID": "97f57849-3919-4bc0-8b5a-60884faca4a9",
+ "Name": "camejef@BUMBLEBEE 2012-02-19 09:25:24",
+ "RunUser": "BUMBLEBEE\\camejef",
+ "Xmlns": "http://microsoft.com/schemas/VisualStudio/TeamTest/2010",
+ "Times": {
+  "Text": "",
+  "Creation": "2012-02-19T09:25:24.8479038-05:00",
+  "Queuing": "2012-02-19T09:25:25.1799228-05:00",
+  "Start": "2012-02-19T09:25:25.2569272-05:00",
+  "Finish": "2012-02-19T09:25:26.0819744-05:00"
+ },
+ "Results": {
+  "Text": "\n        \n        \n        \n        \n    ",
+  "UnitTestResult": [
+   {
+    "Text": "\n            \n        ",
+    "ExecutionId": "d7b75d23-a952-4578-8542-326abd65c695",
+    "TestId": "272c9292-71fc-4aaa-5ed5-d7869de15ae4",
+    "TestName": "AddingSeveralNumbers_40",
+    "ComputerName": "BUMBLEBEE",
+    "Duration": "00:00:00.0768910",
+    "StartTime": "2012-02-19T09:25:25.2729281-05:00",
+    "EndTime": "2012-02-19T09:25:25.9379661-05:00",
+    "TestType": "13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b",
+    "Outcome": "Passed",
+    "TestListId": "8c84fa94-04c1-424b-9868-57a2d4851a1d",
+    "RelativeResultsDirectory": "d7b75d23-a952-4578-8542-326abd65c695",
+    "Output": {
+     "Text": "\n                \n            ",
+     "ErrorInfo": {
+      "Text": "",
+      "Message": ""
+     }
+    }
+   },
+   {
+    "Text": "\n            \n        ",
+    "ExecutionId": "0f00d527-6edd-4045-b9b5-65ebce5b3874",
+    "TestId": "0156926a-5b5c-a0f3-47b4-9cf23f44894b",
+    "TestName": "AddingSeveralNumbers_60",
+    "ComputerName": "BUMBLEBEE",
+    "Duration": "00:00:00.0111534",
+    "StartTime": "2012-02-19T09:25:25.9399663-05:00",
+    "EndTime": "2012-02-19T09:25:25.9719681-05:00",
+    "TestType": "13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b",
+    "Outcome": "Passed",
+    "TestListId": "8c84fa94-04c1-424b-9868-57a2d4851a1d",
+    "RelativeResultsDirectory": "0f00d527-6edd-4045-b9b5-65ebce5b3874",
+    "Output": {
+     "Text": "\n                \n            ",
+     "ErrorInfo": {
+      "Text": "",
+      "Message": ""
+     }
+    }
+   },
+   {
+    "Text": "\n            \n        ",
+    "ExecutionId": "17356f2f-b3c9-4bee-b6b3-74fe17b2e82b",
+    "TestId": "45571f70-456e-69eb-dbf2-7ec265c4b751",
+    "TestName": "AddTwoNumbers",
+    "ComputerName": "BUMBLEBEE",
+    "Duration": "00:00:00.0055623",
+    "StartTime": "2012-02-19T09:25:25.9799685-05:00",
+    "EndTime": "2012-02-19T09:25:25.9919692-05:00",
+    "TestType": "13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b",
+    "Outcome": "Passed",
+    "TestListId": "8c84fa94-04c1-424b-9868-57a2d4851a1d",
+    "RelativeResultsDirectory": "17356f2f-b3c9-4bee-b6b3-74fe17b2e82b",
+    "Output": {
+     "Text": "\n                \n            ",
+     "ErrorInfo": {
+      "Text": "",
+      "Message": ""
+     }
+    }
+   },
+   {
+    "Text": "\n            \n        ",
+    "ExecutionId": "6a02f552-17f1-4f86-9eaa-bcddec97f075",
+    "TestId": "10684beb-1457-c825-5087-2d0029460463",
+    "TestName": "FailToAddTwoNumbers",
+    "ComputerName": "BUMBLEBEE",
+    "Duration": "00:00:00.0459057",
+    "StartTime": "2012-02-19T09:25:25.9949694-05:00",
+    "EndTime": "2012-02-19T09:25:26.0469724-05:00",
+    "TestType": "13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b",
+    "Outcome": "Failed",
+    "TestListId": "8c84fa94-04c1-424b-9868-57a2d4851a1d",
+    "RelativeResultsDirectory": "6a02f552-17f1-4f86-9eaa-bcddec97f075",
+    "Output": {
+     "Text": "\n                \n                \n            ",
+     "ErrorInfo": {
+      "Text": "\n                    \n                    \n                ",
+      "Message": "\n                        Test method Pickles.TestHarness.MSTest.AdditionFeature.FailToAddTwoNumbers threw exception:\n                        Should.Core.Exceptions.NotEqualException: Assert.NotEqual() Failure\n                    "
+     }
+    }
+   }
+  ]
+ },
+ "TestDefinitions": {
+  "Text": "\n        \n        \n        \n        \n    ",
+  "UnitTest": [
+   {
+    "Text": "\n            \n            \n            \n            \n        ",
+    "Name": "FailToAddTwoNumbers",
+    "Storage": "pickles.testharness\\pickles.testharness.mstest\\bin\\debug\\pickles.testharness.mstest.dll",
+    "ID": "10684beb-1457-c825-5087-2d0029460463",
+    "Execution": {
+     "Text": "",
+     "ID": "6a02f552-17f1-4f86-9eaa-bcddec97f075"
+    },
+    "TestMethod": {
+     "Text": "",
+     "CodeBase": "c:/dev/pickles-results-harness/Pickles.TestHarness/Pickles.TestHarness.MSTest/bin/debug/Pickles.TestHarness.MSTest.DLL",
+     "ClassName": "Pickles.TestHarness.MSTest.AdditionFeature, Pickles.TestHarness.MSTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+     "Name": "FailToAddTwoNumbers"
+    }
+   },
+   {
+    "Text": "\n            \n            \n            \n            \n        ",
+    "Name": "AddTwoNumbers",
+    "Storage": "pickles.testharness\\pickles.testharness.mstest\\bin\\debug\\pickles.testharness.mstest.dll",
+    "ID": "45571f70-456e-69eb-dbf2-7ec265c4b751",
+    "Execution": {
+     "Text": "",
+     "ID": "17356f2f-b3c9-4bee-b6b3-74fe17b2e82b"
+    },
+    "TestMethod": {
+     "Text": "",
+     "CodeBase": "c:/dev/pickles-results-harness/Pickles.TestHarness/Pickles.TestHarness.MSTest/bin/debug/Pickles.TestHarness.MSTest.DLL",
+     "ClassName": "Pickles.TestHarness.MSTest.AdditionFeature, Pickles.TestHarness.MSTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+     "Name": "AddTwoNumbers"
+    }
+   },
+   {
+    "Text": "\n            \n            \n            \n            \n        ",
+    "Name": "AddingSeveralNumbers_40",
+    "Storage": "pickles.testharness\\pickles.testharness.mstest\\bin\\debug\\pickles.testharness.mstest.dll",
+    "ID": "272c9292-71fc-4aaa-5ed5-d7869de15ae4",
+    "Execution": {
+     "Text": "",
+     "ID": "d7b75d23-a952-4578-8542-326abd65c695"
+    },
+    "TestMethod": {
+     "Text": "",
+     "CodeBase": "c:/dev/pickles-results-harness/Pickles.TestHarness/Pickles.TestHarness.MSTest/bin/debug/Pickles.TestHarness.MSTest.DLL",
+     "ClassName": "Pickles.TestHarness.MSTest.AdditionFeature, Pickles.TestHarness.MSTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+     "Name": "AddingSeveralNumbers_40"
+    }
+   },
+   {
+    "Text": "\n            \n            \n            \n            \n        ",
+    "Name": "AddingSeveralNumbers_60",
+    "Storage": "pickles.testharness\\pickles.testharness.mstest\\bin\\debug\\pickles.testharness.mstest.dll",
+    "ID": "0156926a-5b5c-a0f3-47b4-9cf23f44894b",
+    "Execution": {
+     "Text": "",
+     "ID": "0f00d527-6edd-4045-b9b5-65ebce5b3874"
+    },
+    "TestMethod": {
+     "Text": "",
+     "CodeBase": "c:/dev/pickles-results-harness/Pickles.TestHarness/Pickles.TestHarness.MSTest/bin/debug/Pickles.TestHarness.MSTest.DLL",
+     "ClassName": "Pickles.TestHarness.MSTest.AdditionFeature, Pickles.TestHarness.MSTest, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+     "Name": "AddingSeveralNumbers_60"
+    }
+   }
+  ]
+ },
+ "TestEntries": {
+  "Text": "\n        \n        \n        \n        \n    ",
+  "TestEntry": [
+   {
+    "Text": "",
+    "TestId": "272c9292-71fc-4aaa-5ed5-d7869de15ae4",
+    "ExecutionId": "d7b75d23-a952-4578-8542-326abd65c695",
+    "TestListId": "8c84fa94-04c1-424b-9868-57a2d4851a1d"
+   },
+   {
+    "Text": "",
+    "TestId": "0156926a-5b5c-a0f3-47b4-9cf23f44894b",
+    "ExecutionId": "0f00d527-6edd-4045-b9b5-65ebce5b3874",
+    "TestListId": "8c84fa94-04c1-424b-9868-57a2d4851a1d"
+   },
+   {
+    "Text": "",
+    "TestId": "45571f70-456e-69eb-dbf2-7ec265c4b751",
+    "ExecutionId": "17356f2f-b3c9-4bee-b6b3-74fe17b2e82b",
+    "TestListId": "8c84fa94-04c1-424b-9868-57a2d4851a1d"
+   },
+   {
+    "Text": "",
+    "TestId": "10684beb-1457-c825-5087-2d0029460463",
+    "ExecutionId": "6a02f552-17f1-4f86-9eaa-bcddec97f075",
+    "TestListId": "8c84fa94-04c1-424b-9868-57a2d4851a1d"
+   }
+  ]
+ },
+ "TestLists": {
+  "Text": "\n        \n        \n    ",
+  "TestList": {
+   "Text": "",
+   "Name": "All Loaded Results",
+   "ID": "19431567-8539-422a-85d7-44ee4e166bda"
+  }
+ }
+}

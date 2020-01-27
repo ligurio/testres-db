@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="http://w188823.example.com:9001/test/workflow.cloning?out=xml" hostname="localhost" tests="19" failures="2" errors="0" time="0.357" timestamp="2013-07-16T19:52:00Z">
+<testsuite id="0" name="workflow.cloning.test" hostname="localhost" tests="4" failures="0" errors="0" time="0.002" timestamp="2013-07-16T19:52:00Z">
+<testcase name="has schedule departure date predicate" tests="4" failures="0" errors="0" time="0.002" timestamp="2013-07-16T19:52:00Z">
+</testcase>
+</testsuite>
+<testsuite id="1" name="workflow.cloning.test" hostname="localhost" tests="8" failures="0" errors="0" time="0.001" timestamp="2013-07-16T19:52:00Z">
+<testcase name="has effective date predicate" tests="4" failures="0" errors="0" time="0.001" timestamp="2013-07-16T19:52:00Z">
+</testcase>
+</testsuite>
+<testsuite id="2" name="workflow.cloning.test" hostname="localhost" tests="12" failures="0" errors="0" time="0.001" timestamp="2013-07-16T19:52:00Z">
+<testcase name="has origin and destination predicate" tests="4" failures="0" errors="0" time="0.001" timestamp="2013-07-16T19:52:00Z">
+</testcase>
+</testsuite>
+<testsuite id="3" name="workflow.cloning.test" hostname="localhost" tests="13" failures="1" errors="0" time="0" timestamp="2013-07-16T19:52:00Z">
+<testcase name="has AFE detour number predicate" tests="1" failures="1" errors="0" time="0" timestamp="2013-07-16T19:52:00Z">
+<failure type="AssertionFailedError" message="Died on test #1: &apos;undefined&apos; is not an object (evaluating &apos;data.cloneParams.fromCategory&apos;)" />
+</testcase>
+<system-out>
+<![CDATA[
+[workflow.cloning.test, has AFE detour number predicate, 1] Died on test #1: 'undefined' is not an object (evaluating 'data.cloneParams.fromCategory')
+]]>
+</system-out>
+</testsuite>
+<testsuite id="4" name="workflow.cloning.test" hostname="localhost" tests="14" failures="2" errors="0" time="0" timestamp="2013-07-16T19:52:00Z">
+<testcase name="has scenarios predicate" tests="1" failures="1" errors="0" time="0" timestamp="2013-07-16T19:52:00Z">
+<failure type="AssertionFailedError" message="Died on test #1: &apos;undefined&apos; is not an object (evaluating &apos;data.cloneParams.fromCategory&apos;)" />
+</testcase>
+<system-out>
+<![CDATA[
+[workflow.cloning.test, has scenarios predicate, 1] Died on test #1: 'undefined' is not an object (evaluating 'data.cloneParams.fromCategory')
+]]>
+</system-out>
+</testsuite>
+<testsuite id="5" name="workflow.cloning.test" hostname="localhost" tests="19" failures="2" errors="0" time="0.001" timestamp="2013-07-16T19:52:00Z">
+<testcase name="clone warning in comments predicate" tests="5" failures="0" errors="0" time="0.001" timestamp="2013-07-16T19:52:00Z">
+</testcase>
+</testsuite>
+</testsuites>

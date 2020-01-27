@@ -1,0 +1,378 @@
+{
+ "XMLName": {
+  "Space": "",
+  "Local": "testsuites"
+ },
+ "Disabled": 0,
+ "Errors": 0,
+ "Failures": 0,
+ "Name": "",
+ "Time": 0,
+ "Tests": 0,
+ "Suites": [
+  {
+   "XMLName": {
+    "Space": "",
+    "Local": "testsuite"
+   },
+   "Disabled": 0,
+   "Errors": 0,
+   "Failures": 0,
+   "Hostname": "",
+   "Id": "",
+   "Name": "Customer Demographics Tests",
+   "Package": "",
+   "Skipped": 0,
+   "Tests": 9,
+   "Time": 0,
+   "Timestamp": "2012-08-23T14:40:44.874443-05:00",
+   "Properties": null,
+   "TestCases": [
+    {
+     "XMLName": {
+      "Space": "",
+      "Local": "testcase"
+     },
+     "Assertions": "",
+     "Classname": "CustomerDemographicsPKG.Name",
+     "Error": null,
+     "Failure": null,
+     "Name": "Insert First Name",
+     "Skipped": 0,
+     "Status": "",
+     "Systemout": {
+      "Value": ""
+     },
+     "Systemerr": {
+      "Value": ""
+     },
+     "Time": 0
+    },
+    {
+     "XMLName": {
+      "Space": "",
+      "Local": "testcase"
+     },
+     "Assertions": "",
+     "Classname": "CustomerDemographicsPKG.Name",
+     "Error": null,
+     "Failure": null,
+     "Name": "Insert Last Name",
+     "Skipped": 0,
+     "Status": "",
+     "Systemout": {
+      "Value": ""
+     },
+     "Systemerr": {
+      "Value": ""
+     },
+     "Time": 0
+    },
+    {
+     "XMLName": {
+      "Space": "",
+      "Local": "testcase"
+     },
+     "Assertions": "",
+     "Classname": "CustomerDemographicsPKG.Name",
+     "Error": null,
+     "Failure": null,
+     "Name": "Change First Name",
+     "Skipped": 0,
+     "Status": "",
+     "Systemout": {
+      "Value": ""
+     },
+     "Systemerr": {
+      "Value": ""
+     },
+     "Time": 0
+    },
+    {
+     "XMLName": {
+      "Space": "",
+      "Local": "testcase"
+     },
+     "Assertions": "",
+     "Classname": "CustomerDemographicsPKG.Name",
+     "Error": null,
+     "Failure": null,
+     "Name": "Change Last Name",
+     "Skipped": 0,
+     "Status": "",
+     "Systemout": {
+      "Value": ""
+     },
+     "Systemerr": {
+      "Value": ""
+     },
+     "Time": 0
+    },
+    {
+     "XMLName": {
+      "Space": "",
+      "Local": "testcase"
+     },
+     "Assertions": "",
+     "Classname": "CustomerDemographicsPKG.Name",
+     "Error": null,
+     "Failure": null,
+     "Name": "Delete First Name",
+     "Skipped": 0,
+     "Status": "",
+     "Systemout": {
+      "Value": ""
+     },
+     "Systemerr": {
+      "Value": ""
+     },
+     "Time": 0
+    },
+    {
+     "XMLName": {
+      "Space": "",
+      "Local": "testcase"
+     },
+     "Assertions": "",
+     "Classname": "CustomerDemographicsPKG.Name",
+     "Error": null,
+     "Failure": null,
+     "Name": "Delete Last Name",
+     "Skipped": 0,
+     "Status": "",
+     "Systemout": {
+      "Value": ""
+     },
+     "Systemerr": {
+      "Value": ""
+     },
+     "Time": 0
+    },
+    {
+     "XMLName": {
+      "Space": "",
+      "Local": "testcase"
+     },
+     "Assertions": "",
+     "Classname": "CustomerDemographicsPKG.Misc",
+     "Error": null,
+     "Failure": null,
+     "Name": "Insert DOB",
+     "Skipped": 0,
+     "Status": "",
+     "Systemout": {
+      "Value": ""
+     },
+     "Systemerr": {
+      "Value": ""
+     },
+     "Time": 0
+    },
+    {
+     "XMLName": {
+      "Space": "",
+      "Local": "testcase"
+     },
+     "Assertions": "",
+     "Classname": "CustomerDemographicsPKG.Misc",
+     "Error": null,
+     "Failure": null,
+     "Name": "Update DOB",
+     "Skipped": 0,
+     "Status": "",
+     "Systemout": {
+      "Value": ""
+     },
+     "Systemerr": {
+      "Value": ""
+     },
+     "Time": 0
+    },
+    {
+     "XMLName": {
+      "Space": "",
+      "Local": "testcase"
+     },
+     "Assertions": "",
+     "Classname": "CustomerDemographicsPKG.Misc",
+     "Error": null,
+     "Failure": null,
+     "Name": "Delete DOB",
+     "Skipped": 0,
+     "Status": "",
+     "Systemout": {
+      "Value": ""
+     },
+     "Systemerr": {
+      "Value": ""
+     },
+     "Time": 0
+    }
+   ]
+  },
+  {
+   "XMLName": {
+    "Space": "",
+    "Local": "testsuite"
+   },
+   "Disabled": 0,
+   "Errors": 0,
+   "Failures": 1,
+   "Hostname": "",
+   "Id": "",
+   "Name": "Customer Contact Tests",
+   "Package": "",
+   "Skipped": 0,
+   "Tests": 4,
+   "Time": 0,
+   "Timestamp": "2012-08-23T14:40:44.874443-05:00",
+   "Properties": null,
+   "TestCases": [
+    {
+     "XMLName": {
+      "Space": "",
+      "Local": "testcase"
+     },
+     "Assertions": "",
+     "Classname": "CustomerContact.Address",
+     "Error": null,
+     "Failure": null,
+     "Name": "Insert Street",
+     "Skipped": 0,
+     "Status": "",
+     "Systemout": {
+      "Value": ""
+     },
+     "Systemerr": {
+      "Value": ""
+     },
+     "Time": 0
+    },
+    {
+     "XMLName": {
+      "Space": "",
+      "Local": "testcase"
+     },
+     "Assertions": "",
+     "Classname": "CustomerContact.Address",
+     "Error": null,
+     "Failure": null,
+     "Name": "Insert City",
+     "Skipped": 0,
+     "Status": "",
+     "Systemout": {
+      "Value": ""
+     },
+     "Systemerr": {
+      "Value": ""
+     },
+     "Time": 0
+    },
+    {
+     "XMLName": {
+      "Space": "",
+      "Local": "testcase"
+     },
+     "Assertions": "",
+     "Classname": "CustomerContact.Address",
+     "Error": null,
+     "Failure": null,
+     "Name": "Insert State",
+     "Skipped": 0,
+     "Status": "",
+     "Systemout": {
+      "Value": ""
+     },
+     "Systemerr": {
+      "Value": ""
+     },
+     "Time": 0
+    },
+    {
+     "XMLName": {
+      "Space": "",
+      "Local": "testcase"
+     },
+     "Assertions": "",
+     "Classname": "CustomerContact.Address",
+     "Error": {
+      "Value": "Zip code 139819 is not in range of valid zip codes.",
+      "Type": "",
+      "Message": "Zip code out of range"
+     },
+     "Failure": null,
+     "Name": "Zip",
+     "Skipped": 0,
+     "Status": "",
+     "Systemout": {
+      "Value": ""
+     },
+     "Systemerr": {
+      "Value": ""
+     },
+     "Time": 0
+    },
+    {
+     "XMLName": {
+      "Space": "",
+      "Local": "testcase"
+     },
+     "Assertions": "",
+     "Classname": "CustomerContact.Phone",
+     "Error": null,
+     "Failure": null,
+     "Name": "Insert Home Phone",
+     "Skipped": 0,
+     "Status": "",
+     "Systemout": {
+      "Value": ""
+     },
+     "Systemerr": {
+      "Value": ""
+     },
+     "Time": 0
+    },
+    {
+     "XMLName": {
+      "Space": "",
+      "Local": "testcase"
+     },
+     "Assertions": "",
+     "Classname": "CustomerContact.Phone",
+     "Error": null,
+     "Failure": null,
+     "Name": "Insert Cell Phone",
+     "Skipped": 0,
+     "Status": "",
+     "Systemout": {
+      "Value": ""
+     },
+     "Systemerr": {
+      "Value": ""
+     },
+     "Time": 0
+    },
+    {
+     "XMLName": {
+      "Space": "",
+      "Local": "testcase"
+     },
+     "Assertions": "",
+     "Classname": "CustomerContact.Phone",
+     "Error": null,
+     "Failure": null,
+     "Name": "Insert Business Phone",
+     "Skipped": 0,
+     "Status": "",
+     "Systemout": {
+      "Value": ""
+     },
+     "Systemerr": {
+      "Value": ""
+     },
+     "Time": 0
+    }
+   ]
+  }
+ ]
+}
