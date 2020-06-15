@@ -54,7 +54,7 @@
 
 ### TestRail
 
-- http://docs.gurock.com/testrail-api2/start
+- https://docs.gurock.com/testrail-api2/reference-results
 - https://github.com/gurock/testrail-api
 - Go: https://github.com/educlos/testrail
 - Go: https://godoc.org/github.com/Etienne42/testrail
