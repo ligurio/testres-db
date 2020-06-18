@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 	"fmt"
-	"github.com/ligurio/testres-db/backends"
+	"github.com/shaman-scheduler/testres-backends"
 	"github.com/ligurio/testres-db/db"
 	"gopkg.in/yaml.v2"
 	"io/ioutil"
