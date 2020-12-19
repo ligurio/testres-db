@@ -1,0 +1,24 @@
+<testsuites>
+    <testsuite name="Customer Demographics Tests" tests="9" failures="0" timestamp="2012-08-23T14:40:44.874443-05:00">
+        <testcase name="Insert First Name" classname="CustomerDemographicsPKG.Name"/>
+        <testcase name="Insert Last Name" classname="CustomerDemographicsPKG.Name"/>
+        <testcase name="Change First Name" classname="CustomerDemographicsPKG.Name"/>
+        <testcase name="Change Last Name" classname="CustomerDemographicsPKG.Name"/>
+        <testcase name="Delete First Name" classname="CustomerDemographicsPKG.Name"/>
+        <testcase name="Delete Last Name" classname="CustomerDemographicsPKG.Name"/>
+        <testcase name="Insert DOB" classname="CustomerDemographicsPKG.Misc"/>
+        <testcase name="Update DOB" classname="CustomerDemographicsPKG.Misc"/>
+        <testcase name="Delete DOB" classname="CustomerDemographicsPKG.Misc"/>
+    </testsuite>
+    <testsuite name="Customer Contact Tests" tests="4" failures="1" timestamp="2012-08-23T14:40:44.874443-05:00">
+        <testcase name="Insert Street" classname="CustomerContact.Address"/>
+        <testcase name="Insert City" classname="CustomerContact.Address"/>
+        <testcase name="Insert State" classname="CustomerContact.Address"/>
+        <testcase name="Zip" classname="CustomerContact.Address">
+            <error message="Zip code out of range">Zip code 139819 is not in range of valid zip codes.</error>
+        </testcase>
+        <testcase name="Insert Home Phone" classname="CustomerContact.Phone"/>
+        <testcase name="Insert Cell Phone" classname="CustomerContact.Phone"/>
+        <testcase name="Insert Business Phone" classname="CustomerContact.Phone"/>
+    </testsuite>
+</testsuites>

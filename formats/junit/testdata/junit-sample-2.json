@@ -1,0 +1,190 @@
+{
+ "XMLName": {
+  "Space": "",
+  "Local": "testsuites"
+ },
+ "Disabled": 0,
+ "Errors": 0,
+ "Failures": 0,
+ "Name": "",
+ "Time": 0,
+ "Tests": 0,
+ "Suites": [
+  {
+   "XMLName": {
+    "Space": "",
+    "Local": "testsuite"
+   },
+   "Disabled": 0,
+   "Errors": 4,
+   "Failures": 0,
+   "Hostname": "",
+   "Id": "",
+   "Name": "",
+   "Package": "",
+   "Skipped": 0,
+   "Tests": 7,
+   "Time": 55.051,
+   "Timestamp": "",
+   "Properties": null,
+   "TestCases": [
+    {
+     "XMLName": {
+      "Space": "",
+      "Local": "testcase"
+     },
+     "Assertions": "",
+     "Classname": "sudoku_app.tests.test_sudoku.TestMainWindow",
+     "Error": {
+      "Value": "\n        ",
+      "Type": "testtools.testresult.real._StringException",
+      "Message": ""
+     },
+     "Failure": null,
+     "Name": "test_settings_tab(with mouse)",
+     "Skipped": 0,
+     "Status": "",
+     "Systemout": {
+      "Value": ""
+     },
+     "Systemerr": {
+      "Value": ""
+     },
+     "Time": 9.32
+    },
+    {
+     "XMLName": {
+      "Space": "",
+      "Local": "testcase"
+     },
+     "Assertions": "",
+     "Classname": "sudoku_app.tests.test_sudoku.TestMainWindow",
+     "Error": {
+      "Value": "\n            Traceback (most recent call last):\n            File \"/usr/lib/python2.7/dist-packages/sudoku_app/tests/test_sudoku.py\", line 215, in\n              test_settings_tab self.main_view.switch_to_tab(\"settingsTab\")\n            File \"/usr/lib/python2.7/dist-packages/ubuntuuitoolkit/emulators.py\", line 172, in\n              switch_to_tab return self.switch_to_tab_by_index(tab.index)\n            File \"/usr/lib/python2.7/dist-packages/ubuntuuitoolkit/emulators.py\", line 142, in\n              switch_to_tab_by_index\n            'The tab with index {0} was not selected.'.format(index)) ToolkitEmulatorException: The tab with index 2 was not selected.\n        ",
+      "Type": "testtools.testresult.real._StringException",
+      "Message": ""
+     },
+     "Failure": null,
+     "Name": "test_new_game_button(with mouse)",
+     "Skipped": 0,
+     "Status": "",
+     "Systemout": {
+      "Value": ""
+     },
+     "Systemerr": {
+      "Value": ""
+     },
+     "Time": 7.985
+    },
+    {
+     "XMLName": {
+      "Space": "",
+      "Local": "testcase"
+     },
+     "Assertions": "",
+     "Classname": "sudoku_app.tests.test_sudoku.TestMainWindow",
+     "Error": null,
+     "Failure": null,
+     "Name": "test_best_scores_tab(with mouse)",
+     "Skipped": 0,
+     "Status": "",
+     "Systemout": {
+      "Value": ""
+     },
+     "Systemerr": {
+      "Value": ""
+     },
+     "Time": 4.459
+    },
+    {
+     "XMLName": {
+      "Space": "",
+      "Local": "testcase"
+     },
+     "Assertions": "",
+     "Classname": "sudoku_app.tests.test_sudoku.TestMainWindow",
+     "Error": null,
+     "Failure": null,
+     "Name": "test_enter_and_cancel(with mouse)",
+     "Skipped": 0,
+     "Status": "",
+     "Systemout": {
+      "Value": ""
+     },
+     "Systemerr": {
+      "Value": ""
+     },
+     "Time": 7.384
+    },
+    {
+     "XMLName": {
+      "Space": "",
+      "Local": "testcase"
+     },
+     "Assertions": "",
+     "Classname": "sudoku_app.tests.test_sudoku.TestMainWindow",
+     "Error": null,
+     "Failure": null,
+     "Name": "test_enter_and_clear_number(with mouse)",
+     "Skipped": 0,
+     "Status": "",
+     "Systemout": {
+      "Value": ""
+     },
+     "Systemerr": {
+      "Value": ""
+     },
+     "Time": 8.104
+    },
+    {
+     "XMLName": {
+      "Space": "",
+      "Local": "testcase"
+     },
+     "Assertions": "",
+     "Classname": "sudoku_app.tests.test_sudoku.TestMainWindow",
+     "Error": {
+      "Value": "\n        ",
+      "Type": "testtools.testresult.real._StringException",
+      "Message": ""
+     },
+     "Failure": null,
+     "Name": "test_hint_button(with mouse)",
+     "Skipped": 0,
+     "Status": "",
+     "Systemout": {
+      "Value": ""
+     },
+     "Systemerr": {
+      "Value": ""
+     },
+     "Time": 9.084
+    },
+    {
+     "XMLName": {
+      "Space": "",
+      "Local": "testcase"
+     },
+     "Assertions": "",
+     "Classname": "sudoku_app.tests.test_sudoku.TestMainWindow",
+     "Error": {
+      "Value": "\n        ",
+      "Type": "testtools.testresult.real._StringException",
+      "Message": ""
+     },
+     "Failure": null,
+     "Name": "test_about_tab(with mouse)",
+     "Skipped": 0,
+     "Status": "",
+     "Systemout": {
+      "Value": ""
+     },
+     "Systemerr": {
+      "Value": ""
+     },
+     "Time": 8.702
+    }
+   ]
+  }
+ ]
+}

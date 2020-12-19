@@ -1,0 +1,194 @@
+{
+ "XMLName": {
+  "Space": "",
+  "Local": "testsuites"
+ },
+ "Disabled": 0,
+ "Errors": 0,
+ "Failures": 0,
+ "Name": "",
+ "Time": 0,
+ "Tests": 0,
+ "Suites": [
+  {
+   "XMLName": {
+    "Space": "",
+    "Local": "testsuite"
+   },
+   "Disabled": 0,
+   "Errors": 0,
+   "Failures": 0,
+   "Hostname": "localhost",
+   "Id": "",
+   "Name": "Fossology Upload Functional Tests",
+   "Package": "",
+   "Skipped": 0,
+   "Tests": 294,
+   "Time": 17.0175561905,
+   "Timestamp": "2011-07-04T23:14:29-06:00",
+   "Properties": null,
+   "TestCases": [
+    {
+     "XMLName": {
+      "Space": "",
+      "Local": "testcase"
+     },
+     "Assertions": "",
+     "Classname": "OneShotgplv21Test",
+     "Error": null,
+     "Failure": null,
+     "Name": "testOneShotgplv21",
+     "Skipped": 0,
+     "Status": "",
+     "Systemout": {
+      "Value": ""
+     },
+     "Systemerr": {
+      "Value": ""
+     },
+     "Time": 1.6280670166
+    },
+    {
+     "XMLName": {
+      "Space": "",
+      "Local": "testcase"
+     },
+     "Assertions": "",
+     "Classname": "verifyDirsOnly",
+     "Error": null,
+     "Failure": null,
+     "Name": "testVerifyFossology",
+     "Skipped": 0,
+     "Status": "",
+     "Systemout": {
+      "Value": ""
+     },
+     "Systemerr": {
+      "Value": ""
+     },
+     "Time": 2.10617995262
+    },
+    {
+     "XMLName": {
+      "Space": "",
+      "Local": "testcase"
+     },
+     "Assertions": "",
+     "Classname": "verify23D1F1L",
+     "Error": null,
+     "Failure": null,
+     "Name": "testVerifyFossology",
+     "Skipped": 0,
+     "Status": "",
+     "Systemout": {
+      "Value": ""
+     },
+     "Systemerr": {
+      "Value": ""
+     },
+     "Time": 2.68125081062
+    },
+    {
+     "XMLName": {
+      "Space": "",
+      "Local": "testcase"
+     },
+     "Assertions": "",
+     "Classname": "verifyFossolyTest",
+     "Error": null,
+     "Failure": null,
+     "Name": "testVerifyFossl16L335",
+     "Skipped": 0,
+     "Status": "",
+     "Systemout": {
+      "Value": ""
+     },
+     "Systemerr": {
+      "Value": ""
+     },
+     "Time": 2.56450390816
+    },
+    {
+     "XMLName": {
+      "Space": "",
+      "Local": "testcase"
+     },
+     "Assertions": "",
+     "Classname": "browseUPloadedTest",
+     "Error": null,
+     "Failure": null,
+     "Name": "testBrowseUploaded",
+     "Skipped": 0,
+     "Status": "",
+     "Systemout": {
+      "Value": ""
+     },
+     "Systemerr": {
+      "Value": ""
+     },
+     "Time": 1.71362090111
+    },
+    {
+     "XMLName": {
+      "Space": "",
+      "Local": "testcase"
+     },
+     "Assertions": "",
+     "Classname": "zendTest",
+     "Error": null,
+     "Failure": null,
+     "Name": "testZendLic",
+     "Skipped": 0,
+     "Status": "",
+     "Systemout": {
+      "Value": ""
+     },
+     "Systemerr": {
+      "Value": ""
+     },
+     "Time": 1.6258058548
+    },
+    {
+     "XMLName": {
+      "Space": "",
+      "Local": "testcase"
+     },
+     "Assertions": "",
+     "Classname": "rhelTest",
+     "Error": null,
+     "Failure": null,
+     "Name": "testRHEL",
+     "Skipped": 0,
+     "Status": "",
+     "Systemout": {
+      "Value": ""
+     },
+     "Systemerr": {
+      "Value": ""
+     },
+     "Time": 2.37193894386
+    },
+    {
+     "XMLName": {
+      "Space": "",
+      "Local": "testcase"
+     },
+     "Assertions": "",
+     "Classname": "verify3filesCopyright",
+     "Error": null,
+     "Failure": null,
+     "Name": "test3filesCopyright",
+     "Skipped": 0,
+     "Status": "",
+     "Systemout": {
+      "Value": ""
+     },
+     "Systemerr": {
+      "Value": ""
+     },
+     "Time": 2.31076908112
+    }
+   ]
+  }
+ ]
+}
