@@ -2,7 +2,7 @@ package db
 
 import (
 	"fmt"
-	"github.com/shaman-scheduler/testres-formats"
+	"github.com/ligurio/testres-db/formats"
 	"os"
 	"testing"
 	"time"

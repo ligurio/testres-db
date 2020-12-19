@@ -5,7 +5,7 @@ import (
 	"errors"
 	"time"
 	"fmt"
-	"github.com/shaman-scheduler/testres-formats"
+	"github.com/ligurio/testres-db/formats"
 	_ "github.com/mattn/go-sqlite3"
 )
 
