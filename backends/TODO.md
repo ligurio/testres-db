@@ -15,6 +15,7 @@
 
 - https://help.github.com/en/actions/configuring-and-managing-workflows/persisting-workflow-data-using-artifacts
 - https://developer.github.com/v3/actions/
+- https://github.com/sethvargo/go-githubactions/issues/14
 - ? https://github.com/google/go-github
 - Documentation: https://docs.github.com/en/rest/reference/actions#artifacts
 
