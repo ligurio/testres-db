@@ -8,7 +8,7 @@ import (
 	"net/http"
 )
 
-func SyncJenkins(client *http.Client, b *Backend) (*[]formats.TestResult, error) {
+func SyncJenkins(client *http.Client, b *Backend, buildsNumber int) (*[]formats.TestResult, error) {
 	var jenkins *gojenkins.Jenkins
 	jenkins = gojenkins.CreateJenkins(client, b.Base, b.Username, b.Secret)
 	ctx := context.Background()
@@ -22,6 +22,9 @@ func SyncJenkins(client *http.Client, b *Backend) (*[]formats.TestResult, error)
 		return nil, err
 	}
 
+	if buildsNumber != -1 && len(jobBuilds) > buildsNumber {
+		jobBuilds = jobBuilds[:buildsNumber]
+	}
 	results := make([]formats.TestResult, len(jobBuilds))
 	for _, jobBuild := range jobBuilds {
 		buildNum, err := jenkins.GetBuild(ctx, b.Pipeline, jobBuild.Number)

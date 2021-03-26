@@ -9,7 +9,7 @@ import (
 	"path/filepath"
 )
 
-func SyncGitLab(client *http.Client, b *Backend) (*[]formats.TestResult, error) {
+func SyncGitLab(client *http.Client, b *Backend, buildsNumber int) (*[]formats.TestResult, error) {
 	if b.Pipeline != "" {
 		log.Println("Option pipeline is specified, but unused")
 	}
@@ -59,6 +59,9 @@ func SyncGitLab(client *http.Client, b *Backend) (*[]formats.TestResult, error) 
 	jobsOpt := &gitlab.ListJobsOptions{
 		ListOptions: gitlab.ListOptions{Page: 1, PerPage: 10},
 		Scope:       []gitlab.BuildStateValue{"created", "pending", "running", "failed", "success", "canceled", "skipped"},
+	}
+        if buildsNumber != -1 && len(pipelines) > buildsNumber {
+		pipelines = pipelines[:buildsNumber]
 	}
 	for _, pipeline := range pipelines {
 		log.Printf("Found pipeline: %d, status %s", pipeline.ID, pipeline.Status)

@@ -22,13 +22,13 @@ https://api.cirrus-ci.com/graphql | python -m json.tool
 package backends
 
 import (
-	"github.com/machinebox/graphql"
 	"github.com/ligurio/testres-db/formats"
+	"github.com/machinebox/graphql"
 	"golang.org/x/net/context"
 	"net/http"
 )
 
-func SyncCirrusCI(client *http.Client, b *Backend) (*[]formats.TestResult, error) {
+func SyncCirrusCI(client *http.Client, b *Backend, buildsNumber int) (*[]formats.TestResult, error) {
 	graphql_scheme := "https://api.cirrus-ci.com/graphql"
 	ClientOption := graphql.WithHTTPClient(client)
 	connection := graphql.NewClient(graphql_scheme, ClientOption)

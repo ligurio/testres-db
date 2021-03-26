@@ -10,7 +10,7 @@ import (
 	"net/http"
 )
 
-func SyncTeamCity(client *http.Client, b *Backend) (*[]formats.TestResult, error) {
+func SyncTeamCity(client *http.Client, b *Backend, buildsNumber int) (*[]formats.TestResult, error) {
 	connection, err := teamcity.NewWithAddress(b.Username, b.Secret, b.Base, client)
 	if err != nil {
 		return nil, err

@@ -15,8 +15,9 @@ func TestSyncCircleCI(t *testing.T) {
 	backend := Backend{Type: "circleci", Base: "https://circleci.com/", Name: "spotify/helios",
 		Project: "spotify/helios", Branch: "master", Username: username, Secret: token}
 
+	buildsNumber := 5
 	httpClient := NewAPIClient()
-	builds, err := SyncCircleCI(httpClient, &backend)
+	builds, err := SyncCircleCI(httpClient, &backend, buildsNumber)
 	if builds == nil || err != nil {
 		t.Failed()
 	}

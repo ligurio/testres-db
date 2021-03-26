@@ -15,12 +15,14 @@ var options struct {
 	configName  string
 	dbName      string
 	projectName string
+	buildsNumber int
 }
 
 func init() {
 	flag.StringVar(&options.configName, "config", "testres-db.yaml", "config")
 	flag.StringVar(&options.dbName, "db", "testres.sqlite", "database file")
 	flag.StringVar(&options.projectName, "project", "", "project name")
+	flag.IntVar(&options.buildsNumber, "limit", -1, "limit a number of builds")
 
 	flag.Usage = func() {
 		fmt.Fprintf(os.Stderr, "Import test results to an SQLite DB.\n\n")
@@ -91,7 +93,7 @@ func main() {
 		if options.projectName != "" {
 			if options.projectName == p.Name {
 				for _, b := range p.Backends {
-					results, err := b.GetTestResults()
+					results, err := b.GetTestResults(options.buildsNumber)
 					if err != nil {
 						log.Println(err)
 						continue
@@ -107,7 +109,7 @@ func main() {
 			}
 		} else {
 			for _, b := range p.Backends {
-				results, err := b.GetTestResults()
+				results, err := b.GetTestResults(options.buildsNumber)
 				if err != nil {
 					log.Println(err)
 					continue

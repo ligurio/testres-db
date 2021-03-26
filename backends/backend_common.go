@@ -10,7 +10,7 @@ import (
 	"os"
 )
 
-type fnSyncBackend func(client *http.Client, b *Backend) (*[]formats.TestResult, error)
+type fnSyncBackend func(client *http.Client, b *Backend, buildsNumber int) (*[]formats.TestResult, error)
 
 var backend = map[string]fnSyncBackend{
 	"azure_devops": SyncAzureDevOps,
@@ -52,14 +52,14 @@ func NewAPIClient() *http.Client {
 	return client
 }
 
-func (b *Backend) GetTestResults() (*[]formats.TestResult, error) {
+func (b *Backend) GetTestResults(buildsNumber int) (*[]formats.TestResult, error) {
 	log.Println("Backend:", b.Type)
 	fn := backend[b.Type]
 	if fn == nil {
 		return nil, errUnknownBackend
 	}
 	client := NewAPIClient()
-	result, err := fn(client, b)
+	result, err := fn(client, b, buildsNumber)
 	if err != nil {
 		return nil, err
 	}

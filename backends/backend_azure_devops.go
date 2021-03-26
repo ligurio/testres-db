@@ -2,12 +2,12 @@ package backends
 
 import (
 	"context"
+	"github.com/ligurio/testres-db/formats"
 	"github.com/microsoft/azure-devops-go-api/azuredevops"
 	"github.com/microsoft/azure-devops-go-api/azuredevops/build"
 	"github.com/microsoft/azure-devops-go-api/azuredevops/core"
 	"github.com/microsoft/azure-devops-go-api/azuredevops/pipelines"
 	"github.com/microsoft/azure-devops-go-api/azuredevops/testresults"
-	"github.com/ligurio/testres-db/formats"
 	"log"
 	"net/http"
 )
@@ -127,7 +127,7 @@ func getProjectRef(ctx context.Context, connection *azuredevops.Connection, Proj
 }
 
 // Using custom http client: https://github.com/microsoft/azure-devops-go-api/issues/52
-func SyncAzureDevOps(client *http.Client, b *Backend) (*[]formats.TestResult, error) {
+func SyncAzureDevOps(client *http.Client, b *Backend, buildsNumber int) (*[]formats.TestResult, error) {
 	if b.Username != "" {
 		log.Println("Username is specified but unused", b.Username)
 	}

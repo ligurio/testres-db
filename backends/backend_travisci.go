@@ -10,7 +10,7 @@ import (
 	"path"
 )
 
-func SyncTravisCI(client *http.Client, b *Backend) (*[]formats.TestResult, error) {
+func SyncTravisCI(client *http.Client, b *Backend, buildsNumber int) (*[]formats.TestResult, error) {
 	connection := travisci.NewClient(b.Base, b.Secret)
 	connection.HTTPClient = client
 	build_service := connection.Builds
@@ -24,6 +24,9 @@ func SyncTravisCI(client *http.Client, b *Backend) (*[]formats.TestResult, error
 
 	results := make([]formats.TestResult, len(builds))
 	baseURL := "https://travis-ci.org/"
+	if buildsNumber != -1 && len(builds) > buildsNumber {
+		builds = builds[:buildsNumber]
+	}
 	for _, build := range builds {
 		// https://godoc.org/github.com/shuheiktgw/go-travis#Build
 		metadata := *build.Metadata

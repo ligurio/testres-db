@@ -11,12 +11,9 @@ import (
 	"strings"
 )
 
-// limit a number of builds that should be processed
-// -1 means all available builds
-const buildsNumber = 10
 const isDebug = false
 
-func SyncCircleCI(client *http.Client, b *Backend) (*[]formats.TestResult, error) {
+func SyncCircleCI(client *http.Client, b *Backend, buildsNumber int) (*[]formats.TestResult, error) {
 	project_path := strings.Split(b.Project, "/")
 	if len(project_path) != 2 {
 		log.Println("Perhaps wrong project name specified")
@@ -45,6 +42,9 @@ func SyncCircleCI(client *http.Client, b *Backend) (*[]formats.TestResult, error
 		"failed":  formats.StatusFail,
 	}
 
+	if buildsNumber != -1 && len(builds) > buildsNumber {
+		builds = builds[:buildsNumber]
+	}
 	results := make([]formats.TestResult, len(builds))
 	for _, build := range builds {
 		log.Printf("Found build: %d, status %s\n", build.BuildNum, build.Status)
