@@ -1,10 +1,23 @@
-// https://github.com/drone/drone-go/blob/master/drone/client_test.go
-// https://github.com/ktrysmt/go-bitbucket/blob/master/tests/repository_test.go
-
 package backends
 
-import "testing"
+import (
+	"os"
+	"testing"
+)
 
 func TestSyncCircleCI(t *testing.T) {
-	t.Log("TestSyncCircleCI")
+	t.Log("Basic test with spotify/helios project")
+	username := os.Getenv("CIRCLECI_USERNAME")
+	token := os.Getenv("CIRCLECI_TOKEN")
+	if username == "" || token == "" {
+		t.Skip("No CIRCLECI_USERNAME and CIRCLECI_TOKEN.")
+	}
+	backend := Backend{Type: "circleci", Base: "https://circleci.com/", Name: "spotify/helios",
+		Project: "spotify/helios", Branch: "master", Username: username, Secret: token}
+
+	httpClient := NewAPIClient()
+	builds, err := SyncCircleCI(httpClient, &backend)
+	if builds == nil || err != nil {
+		t.Failed()
+	}
 }

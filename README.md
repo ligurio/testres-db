@@ -73,6 +73,19 @@ projects follow steps in
 [documentation](https://circleci.com/docs/api/#add-an-api-token) to obtain API
 token.
 
+Example of configuration file for [Helios project](https://github.com/spotify/helios):
+
+```yaml
+projects:
+- name: helios
+  backends:
+   - type: circleci
+     branch: master
+     base: https://circleci.com/
+     project: spotify/helios
+     username: <username>
+     secret: <token>
+```
 ### Cirrus CI
 
 Cirrus CI allows to [store test report
