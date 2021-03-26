@@ -1,6 +1,7 @@
 package backends
 
 import (
+	"context"
 	"github.com/bndr/gojenkins"
 	"github.com/ligurio/testres-db/formats"
 	"log"
@@ -10,24 +11,25 @@ import (
 func SyncJenkins(client *http.Client, b *Backend) (*[]formats.TestResult, error) {
 	var jenkins *gojenkins.Jenkins
 	jenkins = gojenkins.CreateJenkins(client, b.Base, b.Username, b.Secret)
-	_, err := jenkins.Init()
+	ctx := context.Background()
+	_, err := jenkins.Init(ctx)
 	if err != nil {
 		return nil, err
 	}
 
-	jobBuilds, err := jenkins.GetAllBuildIds(b.Pipeline)
+	jobBuilds, err := jenkins.GetAllBuildIds(ctx, b.Pipeline)
 	if err != nil {
 		return nil, err
 	}
 
 	results := make([]formats.TestResult, len(jobBuilds))
 	for _, jobBuild := range jobBuilds {
-		buildNum, err := jenkins.GetBuild(b.Pipeline, jobBuild.Number)
+		buildNum, err := jenkins.GetBuild(ctx, b.Pipeline, jobBuild.Number)
 		if err != nil {
 			return &results, err
 		}
 		log.Println(jobBuild.URL, buildNum.GetResult())
-		TestResult, err := buildNum.GetResultSet()
+		TestResult, err := buildNum.GetResultSet(ctx)
 		if err != nil {
 			return &results, err
 		}

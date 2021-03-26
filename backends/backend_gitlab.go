@@ -14,8 +14,10 @@ func SyncGitLab(client *http.Client, b *Backend) (*[]formats.TestResult, error) 
 		log.Println("Option pipeline is specified, but unused")
 	}
 
-	gl := gitlab.NewClient(client, b.Secret)
-	gl.SetBaseURL(b.Base)
+	gl, err := gitlab.NewClient(b.Secret, gitlab.WithBaseURL(b.Base))
+	if err != nil {
+		return nil, err
+	}
 
 	projOpt := &gitlab.GetProjectOptions{
 		Statistics:           gitlab.Bool(false),

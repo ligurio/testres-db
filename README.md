@@ -19,13 +19,15 @@ sqlite> SELECT * FROM testrun TR JOIN test T ON TR.test_id = T.test_id JOIN suit
 ```
 $ go get ./...
 $ go test -v ./...
-$ cd cmd/testres-db && go build .
+$ go build ./...
 ```
 
 ## How-To Use
 
 First of all you should make sure test reports is available after every build
-on continuous integration. For example GitLab CI [allows](https://docs.gitlab.com/ee/ci/junit_test_reports.html) to store JUnit reports as artifacts when Travis CI not.
+on continuous integration. For example GitLab CI
+[allows](https://docs.gitlab.com/ee/ci/junit_test_reports.html) to store JUnit
+reports as artifacts when Travis CI is not.
 
 Secondly you should describe configuration file in YAML format which contains
 information about your project.
