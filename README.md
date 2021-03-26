@@ -24,6 +24,9 @@ $ go build ./...
 
 ## How-To Use
 
+There is a way to obtain test results from continuous integration services and
+test results systems. Unfortunately not all such systems supports such ability.
+
 First of all you should make sure test reports is available after every build
 on continuous integration. For example GitLab CI
 [allows](https://docs.gitlab.com/ee/ci/junit_test_reports.html) to store JUnit
@@ -44,9 +47,65 @@ projects:
      secret: anonymous
 ```
 
-By default `testres-db` uses `testres-db.yaml` as configuration file and
+By default `testres-db` uses `testres-db.yaml` as a configuration file and
 `testres.sqlite` as an SQLite database file. You can change default values
 using command-line options.
+
+```sh
+$ testres-db -init -db testres.sqlite
+$ testres-db -import -db testres.sqlite -config testres-db.yaml
+```
+
+## Supported backends
+
+### Azure DevOps
+
+Generate access token in
+[profile](https://docs.microsoft.com/en-us/azure/devops/organizations/accounts/use-personal-access-tokens-to-authenticate?view=azure-devops&tabs=preview-page).
+
+### Circle CI
+
+Circle CI
+[supports](https://circleci.com/docs/2.0/configuration-reference/#store_test_results)
+storing test results in two formats: JUnit XML and Cucumber JSON. Access token
+is not required to query info for public projects, to access to a private
+projects follow steps in
+[documentation](https://circleci.com/docs/api/#add-an-api-token) to obtain API
+token.
+
+### Cirrus CI
+
+Cirrus CI allows to [store test report
+files](https://cirrus-ci.org/guide/writing-tasks/#artifacts-instruction) in
+JUnit formats. Access to Cirrus CI API may require access token. You can
+generate it in [profile](https://cirrus-ci.com/settings/profile/).
+Note: by default [Cirrus CI persists caches and logs for 90 days](https://cirrus-ci.org/faq/).
+
+### GitLab
+
+Gitlab supports publishing JUnit reports. Follow [instructions in
+documentation](https://docs.gitlab.com/ee/ci/junit_test_reports.html) to setup
+it up. In general case to enable the JUnit reports in merge requests, you need
+to add `artifacts:reports:junit` in `.gitlab-ci.yml`, and specify the path(s)
+of the generated test reports. Access to Gitlab API may require access token
+with `api` capability. To generate access token please refer to
+[documentation](https://docs.gitlab.com/ee/user/profile/personal_access_tokens.html).
+`expire_in`
+[allows](https://docs.gitlab.com/ce/ci/yaml/README.html#artifactsexpire_in) you
+to specify how long artifacts should live before they expire and therefore
+deleted, counting from the time they are uploaded and stored on GitLab. If the
+expiry time is not defined, it defaults to the instance wide setting (30 days
+by default, forever on GitLab.com).
+
+### Jenkins
+
+Jenkins supports publishing test results in JUnit format, but not all Jenkins
+instances supports it. To check this you may point your browser to a link
+`<Jenkins URL>/job/<Job Name>/lastCompletedBuild/testReport/api/xml`. Browser
+will show XML document in case of success. Access to Jenkins API may require
+access token, please refer to
+[documentation](https://jenkins.io/doc/book/using/using-credentials/) to obtain
+it.
 
 ## Contribution
 
