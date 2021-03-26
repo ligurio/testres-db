@@ -110,6 +110,20 @@ deleted, counting from the time they are uploaded and stored on GitLab. If the
 expiry time is not defined, it defaults to the instance wide setting (30 days
 by default, forever on GitLab.com).
 
+Example of configuration file for a [Gitlab project](https://gitlab.com/ligurio/test-project):
+
+```yaml
+projects:
+- name: test-project
+  backends:
+   - type: gitlab
+     branch: master
+     base: https://gitlab.com/
+     project: ligurio/test-project
+     username: <username>
+     secret: <token>
+```
+
 ### Jenkins
 
 Jenkins supports publishing test results in JUnit format, but not all Jenkins
