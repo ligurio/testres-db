@@ -1,10 +1,17 @@
 # testres-db
 
-is a tool and library to import test results to a single database. It allows to
-analyze your efficiency of testing, improve test execution and get better
-vizualization of testing in your project. Queries can be executed with a
-standard `sqlite` client or using [Jupyter Notebook](https://jupyter.org/).
-Below there are some examples of SQL queries:
+is a tool and library to import test results to a single SQLite database
+for further analysis your efficiency of testing, find bottlenecks,
+improve test execution and get better vizualization of a testing
+process in your project.
+
+You might consider using one of these three tools:
+
+- [Command Line Shell For SQLite](https://sqlite.org/cli.html)
+- [Datasette](https://datasette.io/)
+- [The Jupyter Notebook](https://jupyter.org/)
+
+Below there are some examples of queries:
 
 ```sql
 ~$ sqlite testres-db.sqlite
