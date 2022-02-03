@@ -3,10 +3,10 @@ package db
 import (
 	"database/sql"
 	"errors"
-	"time"
 	"fmt"
 	"github.com/ligurio/testres-db/formats"
 	_ "github.com/mattn/go-sqlite3"
+	"time"
 )
 
 type DB struct {

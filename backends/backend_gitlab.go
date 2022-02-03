@@ -60,7 +60,7 @@ func SyncGitLab(client *http.Client, b *Backend, buildsNumber int) (*[]formats.T
 		ListOptions: gitlab.ListOptions{Page: 1, PerPage: 10},
 		Scope:       []gitlab.BuildStateValue{"created", "pending", "running", "failed", "success", "canceled", "skipped"},
 	}
-        if buildsNumber != -1 && len(pipelines) > buildsNumber {
+	if buildsNumber != -1 && len(pipelines) > buildsNumber {
 		pipelines = pipelines[:buildsNumber]
 	}
 	for _, pipeline := range pipelines {
