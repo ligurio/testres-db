@@ -12,9 +12,9 @@ import (
 )
 
 var options struct {
-	configName  string
-	dbName      string
-	projectName string
+	configName   string
+	dbName       string
+	projectName  string
 	buildsNumber int
 }
 
