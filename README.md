@@ -144,7 +144,12 @@ it.
 ## See also
 
 - [resultsdb](https://github.com/release-engineering/resultsdb)
-- [TestArchiver](https://github.com/salabs/TestArchiver)
+- [TestArchiver](https://github.com/salabs/TestArchiver) - tools for
+  serialising test results to SQL database.
+- [testmine](https://github.com/bbc/testmine) - test result aggregator and
+  analysis tool.
+- [res](https://github.com/bbc/rest ) - intermediate representation for test
+  results.
 
 ## Contribution
 
