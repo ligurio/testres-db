@@ -148,7 +148,7 @@ it.
   serialising test results to SQL database.
 - [testmine](https://github.com/bbc/testmine) - test result aggregator and
   analysis tool.
-- [res](https://github.com/bbc/rest ) - intermediate representation for test
+- [res](https://github.com/bbc/res) - intermediate representation for test
   results.
 
 ## Contribution
